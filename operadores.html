@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nome = 'Gustavo'
+        let sobrenome = 'Rosauro'
+        let nomeCompleto = nome +' '+sobrenome
+        alert(nomeCompleto)
+        let a,b;
+        a = 20;
+        b = 10;
+        //duas condições verdadeiras operador lógico && resultado verdadeiro
+        document.writeln(a > b && b < a)
+        document.writeln('<br>')
+        //duas condicões sendo uma delas falsa e a outra verdadeira
+        //operador && resultado falso
+        document.writeln(a > b && b > a)
+        document.writeln('<br>')
+        //operador || (ou) basta uma condição ser verdadeira 
+        document.writeln(a > b || b > a)
+        document.writeln('<br>')
+        // operador || se as duas condições forem falsas o resultado será falso
+        document.writeln(a < b || b > a)
+        document.writeln('<br>')
+        // quando usamos a negação colocamos um NÃO na frente da nossa condição 
+        // exemplo A NÃO é maior que B
+        document.writeln(!(a > b))
+        document.writeln('<br>')
+        document.writeln(!(a < b  || b > a))
+
+    </script>
+</body>
+</html>
