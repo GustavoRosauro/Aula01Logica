@@ -8,14 +8,16 @@
 </head>
 <body>
     <script>
-        let codigo = parseInt(window.prompt('informe o código'))
-        let valor = parseInt(window.prompt('informe o valor do produto'))
-        if(codigo === 1 && valor === 12){
-            alert('pizza paga com sucesso')            
-        }else if(codigo === 2  && valor === 4){
-            alert('pão de queijo foi pago com sucesso!')
-        }else {
-            alert('o valor e o código não conferem')
+        let codigo = parseInt(window.prompt('Informe o código do produto'));
+        let preco = parseFloat(window.prompt('informe o valor do produto'));
+        if(codigo == 1 && preco < 12){
+            alert('A pizza está abaixo do valor')
+        }
+        if(codigo == 2 && preco < 4){
+            alert('Pão de queijo abaixo do valor')
+        }
+        if(codigo == 3 && preco < 16){
+            alert('Macarrão abaixo do valor')
         }
     </script>
 </body>

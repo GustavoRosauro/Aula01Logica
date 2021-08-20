@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let direito,esquerdo,inferior;
+        direito = parseInt(window.prompt('informe o valor direito'));
+        esquerdo = parseInt(window.prompt('informe o lado esquerdo'));
+        inferior = parseInt(window.prompt('informe o lado inferior'));
+        if(direito == esquerdo && esquerdo == inferior){
+            alert('Equilátero')
+        }else if(direito != esquerdo && esquerdo != inferior 
+        && inferior != direito){
+            alert('Escaleno')
+        }else{
+            alert('Isóceles')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperatura = parseFloat(window.prompt('informe a tempartura em Celcius'));
+        let escolha = window.prompt('digite 1 para Celcius e 2 para Fahrenheit');
+        switch (escolha) {
+            case '1':
+                alert(temperatura+'ºC')
+                break;
+        
+            case '2':
+                let resultado = (temperatura * 9/5) + 32;
+                alert(resultado+"ºF")
+                break;
+            default:
+                alert('opção não cadastrada!')
+                break;
+        }
+    </script>
+</body>
+</html>

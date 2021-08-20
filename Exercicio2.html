@@ -10,13 +10,13 @@
 
 <body>
     <script>
-        let nota1 = parseInt(window.prompt('informe o primeiro valor'))
-        let nota2 = parseInt(window.prompt('informe o segudo valor'))
-        let media = (nota1 + nota2) / 2;
-        if (media >= 7) {
-            alert('aprovado')
+        let valor1, valor2;
+        valor1 = parseInt(window.prompt('informe o primeiro valor'));
+        valor2 = parseInt(window.prompt('informe o segundo valor'));
+        if (valor1 === valor2) {
+            alert(valor1 + valor2);
         } else {
-            alert('reprovado')
+            alert(valor1 * valor2);
         }
     </script>
 </body>
