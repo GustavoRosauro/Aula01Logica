@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const usa = -1;
+        const alemanha = 5;
+        const japao = 12;
+        let horaAtual = parseInt(window.prompt('Informe a hora atual'))
+        let fusoHorario = window.prompt('qual fuso horario deseja 1- usa,2 alemanha e 3- japão');
+        switch (fusoHorario) {
+            case '1':
+                   alert(horaAtual + usa);
+                break;
+            case '2':
+                    alert(horaAtual + alemanha);
+                break;
+            case '3':
+                    alert(horaAtual + japao);
+                break;
+            default:
+                    alert('opção ainda não está cadastrada')
+                break;
+        }
+    </script>
+</body>
+</html>

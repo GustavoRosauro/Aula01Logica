@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numeroInicial = parseInt(window.prompt('informe o primeiro número'));
+        let numeroFinal = parseInt(window.prompt('informe o segundo número'));
+        if (numeroInicial < numeroFinal) {
+            if (numeroInicial % 2 !== 0) {
+                document.write(`<h1>${numeroInicial} Número IMPAR</h1>`)
+                numeroInicial++;
+            }
+            for (let i = numeroInicial; i < numeroFinal; i++) {
+                document.write(`<h1>${i} Número PAR</h1>`)
+                i++;
+                document.write(`<h1>${i} Número IMPAR</h1>`)
+            }
+        } else {
+            if(numeroFinal %2 !== 0){
+                document.write(`<h1>${numeroFinal} Número IMPAR</h1>`)
+                numeroFinal++;
+            }
+            for (let i = numeroFinal; i < numeroInicial; i++) {
+                    document.write(`<h1>${i} Número PAR</h1>`)
+                    i++;
+                    document.write(`<h1>${i} Número IMPAR</h1>`)
+            }
+        }
+    </script>
+</body>
+
+</html>

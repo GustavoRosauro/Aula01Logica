@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let candidatos = window.prompt('1 - Alessandra, 2- Caio, 3- Geraldo, 4 - Talita 5- Saiu')
+        let alessandra = 0;
+        let caio = 0;
+        let geraldo = 0;
+        let talita = 0;
+        while (candidatos !== '5') {
+            switch (candidatos) {
+                case '1':
+                    alessandra++;
+                    break;
+                case '2':
+                    caio++;
+                    break;
+                case '3':
+                    geraldo++;
+                    break;
+                case '4':
+                    talita++;
+                    break;
+            } 
+            candidatos = window.prompt('1 - Alessandra, 2- Caio, 3- Geraldo, 4 - Talita 5- Saiu');
+        }
+        document.write(`Alesandra: ${alessandra} Caio: ${caio} Geraldo: ${geraldo} Talita: ${talita}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const dolar = 5.25;
+        const euro = 6.17;
+        let opcao = window.prompt(`digite 1 para calular Real
+         para Dolar 2 Dolar para Real 3 Real para Euro 4 Euro para Real`)
+        let valor = parseFloat(window.prompt('Informe o valor a ser convertido'));
+        let calculo = 0;
+        switch (opcao) {
+            case '1':
+                calculo = valor / dolar;
+                alert(calculo.toFixed(2));
+                break;
+            case '2':
+                calculo = valor * dolar;
+                alert(calculo.toFixed(2));
+                break;
+            case '3':
+                calculo = valor / euro;
+                alert(calculo.toFixed(2));
+                break;
+            case '4':
+                calculo = valor * euro;
+                alert(calculo.toFixed(2));
+                break;
+            default:
+                alert('opção não cadastrada')
+                break;
+        }
+    </script>
+</body>
+
+</html>

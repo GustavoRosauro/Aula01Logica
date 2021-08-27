@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0;
+        let listaNumeros = [];
+        for(let i = 0; i < 5;i++){
+            let numero = parseFloat(window.prompt(`informe o número ${i+1}`));
+            listaNumeros.push(numero);
+        }
+        for(let i = 0; i < listaNumeros.length;i++){
+            document.write(`<h1>${listaNumeros[i]}</h1>`);
+            soma += listaNumeros[i];
+        }
+        document.write(`<h1>O valor do total da soma foi ${soma}</h1>`);
+    </script>
+</body>
+</html>

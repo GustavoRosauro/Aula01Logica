@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let soma = 0;
+        let numerosAcima= 0;
+        let numerosAbaixo= 0;
+        for(let i = 0; i < 7;i++){
+            let numero = parseFloat(window.prompt('informe o número'))
+            numeros.push(numero)
+            soma += numero;
+        }
+        let media = soma/numeros.length;
+        for(let i = 0; i < numeros.length;i++){
+            if(numeros[i] >= media){
+                numerosAcima++;
+            }else{
+                numerosAbaixo++;
+            }
+        }        
+        document.write(`<h1>A Soma dos números foi ${soma},
+            numeros acima ou igual a média: ${numerosAcima}
+            numero abaixo da média: ${numerosAbaixo}
+            A média calculada foi de ${media}</h1>`)
+    </script>
+</body>
+</html>
